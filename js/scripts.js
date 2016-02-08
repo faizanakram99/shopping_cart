@@ -21,22 +21,76 @@ $(document).ready(function () {
         var result1 = $('#bottom-block-1 .item_size option:selected');
         if (result1.val() === 'std') {
             $('#bottom-block-1 .item_price').html('$180000');
+            $('#bottom-block-1 .priceOriginal').html('$200000');
         } else {
             $('#bottom-block-1 .item_price').html('$250000');
+            $('#bottom-block-1 .priceOriginal').html('$280000');
         }
     });
+
+     $('#bottom-block-1 .item_Quantity').change(function () {
+        var resultQty1 = $('#bottom-block-1 .item_Quantity option:selected');
+        switch(resultQty1.val()){
+            case '1':
+            $('#bottom-block-1 .item_price').html('$180000');
+            $('#bottom-block-1 .priceOriginal').html('$200000');
+                break;
+           case '2':
+            $('#bottom-block-1 .item_price').html('$360000');
+            $('#bottom-block-1 .priceOriginal').html('$400000');
+                break;
+                case '3':
+            $('#bottom-block-1 .item_price').html('$540000');
+            $('#bottom-block-1 .priceOriginal').html('$600000');
+                break;
+                case '4':
+            $('#bottom-block-1 .item_price').html('$720000');
+            $('#bottom-block-1 .priceOriginal').html('$800000');
+                break;
+                case '5':
+            $('#bottom-block-1 .item_price').html('$900000');
+            $('#bottom-block-1 .priceOriginal').html('$1000000');
+                break;
+        }
+    });
+
 
     $('#bottom-block-2 .item_size').change(function () {
         var result2 = $('#bottom-block-2 .item_size option:selected');
         if (result2.val() === 'std') {
             $('#bottom-block-2 .item_price').html('$200000');
+            $('#bottom-block-2 .priceOriginal').html('$220000');
         } else {
             $('#bottom-block-2 .item_price').html('$300000');
+            $('#bottom-block-2 .priceOriginal').html('$350000');
         }
     });
 
-
-
+  $('#bottom-block-2 .item_Quantity').change(function () {
+        var resultQty2 = $('#bottom-block-2 .item_Quantity option:selected');
+        switch(resultQty2.val()){
+            case '1':
+            $('#bottom-block-2 .item_price').html('$200000');
+            $('#bottom-block-2 .priceOriginal').html('$220000');
+                break;
+           case '2':
+            $('#bottom-block-2 .item_price').html('$400000');
+            $('#bottom-block-2 .priceOriginal').html('$440000');
+                break;
+                case '3':
+            $('#bottom-block-2 .item_price').html('$600000');
+            $('#bottom-block-2 .priceOriginal').html('$660000');
+                break;
+                case '4':
+            $('#bottom-block-2 .item_price').html('$800000');
+            $('#bottom-block-2 .priceOriginal').html('$880000');
+                break;
+                case '5':
+            $('#bottom-block-2 .item_price').html('$1000000');
+            $('#bottom-block-2 .priceOriginal').html('$1100000');
+                break;
+        }
+    });
     $('.item_add').click(function () {
         var cart = $('#cart-anchor'),
             imgtofly = $(this).parents().siblings('img');

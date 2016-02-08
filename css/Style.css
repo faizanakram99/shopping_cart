@@ -1,5 +1,5 @@
 #fix-body {
-	margin-bottom: 0;
+    margin-bottom: 0;
     padding-bottom: 5px;
 }
 
@@ -75,8 +75,6 @@ th {
     text-align: center;
 }
 
-
-
 #cart-list {
     display: none;
     background: #eee;
@@ -85,7 +83,7 @@ th {
     border-radius: 15px;
     float: right;
     position: absolute;
-    right:20%;
+    right: 20%;
 }
 
 .content-heading {
@@ -109,7 +107,6 @@ th {
 .simpleCart_shelfItem {
     margin-bottom: 50px;
     position: relative;
-
 }
 
 #image-1,
@@ -120,16 +117,17 @@ th {
     margin: 0 auto;
 }
 
-#image-1, #image-2{
+#image-1,
+#image-2 {
     position: relative;
-    }
+}
 
 #bottom-block-1,
 #bottom-block-2 {
     display: block;
     max-width: 480px;
     background: #ccc;
-    padding: 20px;
+    padding: 20px 0 0;
     font-size: 2em;
 }
 
@@ -143,14 +141,19 @@ th {
 #bottom-block-1 a,
 #bottom-block-2 a {
     display: block;
+    background: rgb(229, 28, 35);
+    color: #fff;
+    border-radius: 0 0 5px 5px;
 }
 
-.addAnimation{
-	-webkit-transform:scale(0,0);
-	-o-transform:scale(0,0);
-	-moz-transform:scale(0,0);
-	transform:scale(0,0);
-	opacity:.2;
+#bottom-block-1 a:hover,
+#bottom-block-2 a:hover {
+    background: deepskyblue;
+}
+
+.priceOriginal {
+	text-decoration: line-through;
+    color:#444;
 }
 
 footer {
@@ -193,7 +196,7 @@ footer li {
     display: inline-block;
 }
 
-footer > div span{
+footer > div span {
     margin-bottom: 10px;
     display: block;
 }
@@ -257,7 +260,7 @@ footer > div span{
         display: block;
         height: auto;
         line-height: 20px;
-/*        margin-bottom: -40px;*/
+        /*        margin-bottom: -40px;*/
     }
     footer {
         display: block;
