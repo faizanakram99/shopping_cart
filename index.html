@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/css-resets.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="js/simpleCart.js"></script>
+    <script src="js/jquery_easing.js"></script>
+    <script src="js/scripts.js"></script>
+
+</head>
+
+<body id="fix-body" class="jumbotron container-fluid">
+    <div class="wrapper">
+    <nav class="main-nav">
+        <a id="mobile-nav"></a>
+        <ul id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="javascript:;" id="cart-anchor"><span class="glyphicon glyphicon-shopping-cart" aria-hidden=true></span></a></li>
+        </ul>
+    </nav>
+    <div id="cart-list">
+        <div class="simpleCart_items"></div> <span id="total">Grand Total :</span> <span class="simpleCart_total"></span></div>
+
+    <div class="clearfix"></div>
+
+    <div class="container-fluid">
+
+
+        <div class="row">
+
+            <h2 class="content-heading text-center">Products</h2>
+
+            <div class="clearfix"></div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 simpleCart_shelfItem">
+                <h2 class="item_name text-center">SUV 1</h2>
+                <img src="images/1.jpg" alt="1" id="image-1" class="img-responsive" />
+                <div id="bottom-block-1">
+                    <div>
+                        <span class="item_price">$180000</span>
+                        <select class="item_size">
+                            <option value="std">Standard</option>
+                            <option value="del">Deluxe</option>
+                        </select>
+                    </div>
+                    <a href="javascript:;" class="item_add"><span class="glyphicon glyphicon-shopping-cart"></span>Buy</a>
+                </div>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 simpleCart_shelfItem">
+                <h2 class="item_name text-center">SUV 2</h2>
+                <img src="images/2.jpg" alt="2" id="image-2" class="img-responsive" />
+                <div id="bottom-block-2">
+                    <div>
+                        <span class="item_price">$200000</span>
+                        <select class="item_size">
+                            <option value="std">Standard</option>
+                            <option value="del">Deluxe</option>
+                        </select>
+                    </div>
+                    <a href="javascript:;" class="item_add"><span class="glyphicon glyphicon-shopping-cart"></span>Buy</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <footer>
+                <div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a>/</li>
+                            <li><a href="#">About</a>/</li>
+                            <li><a href="#">Products</a>/</li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                     &copy; SUV Shopping Portal- 2016 <br/>
+
+                </div>
+                <div>
+
+                    <span>Srinagar, J&K</span>
+                    +91 8716991907
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+       </body>
+
+</html>
