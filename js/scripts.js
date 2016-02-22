@@ -17,11 +17,19 @@ $(document).ready(function () {
     });
 
 
-    $('.item_Quantity').change(function () {
+    $('#bottom-block-1 .item_Quantity').change(function () {
 
-        if ($('.item_size').val() === "") {
+        if ($('#bottom-block-1 .item_size').val() === "") {
             alert("Select model first and after selecting model change quantity to reflect changes!");
-            $('.item_Quantity').val("");
+            $('#bottom-block-1 .item_Quantity').val("");
+        }
+    });
+
+      $('#bottom-block-2 .item_Quantity').change(function () {
+
+        if ($('#bottom-block-2 .item_size').val() === "") {
+            alert("Select model first and after selecting model change quantity to reflect changes!");
+            $('#bottom-block-2 .item_Quantity').val("");
         }
     });
 
